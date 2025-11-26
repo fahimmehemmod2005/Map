@@ -33,12 +33,12 @@ class SplashView extends GetView<SplashController> {
 
         Obx(
                 () => Container(
-          width: 192,
-          height: 15,
+          width: 192.w,
+          height: 15.h,
           decoration: BoxDecoration(
             color: Color(0xffFFE4D4),
-            borderRadius: BorderRadius.circular(30),
-            border: Border.all(color: Colors.white,width: 3)
+            borderRadius: BorderRadius.circular(30.r),
+            border: Border.all(color: Colors.white,width: 3.w)
           ),
           child: Stack(
             children: [
@@ -47,7 +47,7 @@ class SplashView extends GetView<SplashController> {
                 height: 15.h,
                 decoration: BoxDecoration(
                   color: Color(0xffFC9300),
-                  borderRadius: BorderRadius.circular(30),
+                  borderRadius: BorderRadius.circular(30.r),
                 ),
               ),
             ],
