@@ -35,7 +35,7 @@ class LoginView extends GetView<LoginController> {
             //______________Custom Container___________________
 
             CustomContainerBar(
-              child: Padding(
+              child: SingleChildScrollView(
                 padding: EdgeInsets.symmetric(horizontal: 34),
                 child: Column(
                   children: [
@@ -93,9 +93,9 @@ class LoginView extends GetView<LoginController> {
                     ),
 
                     SizedBox(height: 24.h),
-                    
+
                     //___________________Forgot Button__________________
-                    
+
                     Align(
                       alignment: AlignmentGeometry.centerRight,
                       child: GestureDetector(

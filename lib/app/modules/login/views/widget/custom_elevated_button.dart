@@ -15,9 +15,9 @@ class CustomElevatedButton extends StatelessWidget {
     Key? key,
     required this.text,
     required this.onPressed,
-    this.height = 56.0,
+    this.height = 47.0,
     this.width = double.infinity,
-    this.borderRadius = 30.0,
+    this.borderRadius = 60.0,
     this.textStyle,
     this.icon,
     this.gradientColors,
@@ -27,14 +27,10 @@ class CustomElevatedButton extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       height: height.h,
-      width: width != double.infinity ? width.w : width,
+      width: width.w,
       decoration: BoxDecoration(
         gradient: LinearGradient(
-          colors: gradientColors ??
-              [
-                const Color(0xff6DC3F2),
-                const Color(0xff0289F2),
-              ],
+          colors: gradientColors ?? [Color(0xff6DC3F2), Color(0xff0289F2)],
           begin: Alignment.topCenter,
           end: Alignment.bottomCenter,
         ),
@@ -47,15 +43,10 @@ class CustomElevatedButton extends StatelessWidget {
           borderRadius: BorderRadius.circular(borderRadius.r),
           child: Center(
             child: Row(
-              mainAxisAlignment: MainAxisAlignment.center,
+              mainAxisSize: MainAxisSize.min,
               children: [
-                Text(
-                  text, style: textStyle,
-                ),
-                if (icon != null) ...[
-                  SizedBox(width: 10.w),
-                  icon!,
-                ],
+                Text(text, style: textStyle),
+                if (icon != null) ...[SizedBox(width: 10.w), icon!],
               ],
             ),
           ),
