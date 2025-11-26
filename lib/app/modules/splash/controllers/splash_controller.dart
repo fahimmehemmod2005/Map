@@ -1,4 +1,5 @@
 import 'package:get/get.dart';
+import '../../../routes/app_pages.dart';
 
 class SplashController extends GetxController {
   var progress = 0.0.obs;
@@ -18,7 +19,7 @@ class SplashController extends GetxController {
       // Navigate when complete
       if (i == 100) {
         await Future.delayed(Duration(milliseconds: 200));
-        // Get.offAllNamed(Routes.LOGIN);
+        Get.offAllNamed(Routes.LOGIN);
       }
     }
   }

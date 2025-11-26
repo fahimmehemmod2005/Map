@@ -15,6 +15,7 @@ void main() {
         title: "Map",
         initialRoute: AppPages.INITIAL,
         getPages: AppPages.routes,
+        debugShowCheckedModeBanner: false,
       ),
     ),
   );
