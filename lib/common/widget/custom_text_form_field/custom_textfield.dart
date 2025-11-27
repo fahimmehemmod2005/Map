@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:flutter_svg/svg.dart';
 
 class CustomTextFormField extends StatelessWidget {
   // Required / commonly used parameters
@@ -67,40 +66,44 @@ class CustomTextFormField extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return TextFormField(
-      controller: controller,
-      initialValue: initialValue,
-      focusNode: focusNode,
-      obscureText: obscureText,
-      readOnly: readOnly,
-      enabled: enabled,
-      keyboardType: keyboardType,
-      textInputAction: textInputAction,
-      maxLines: maxLines,
-      maxLength: maxLength,
-      onChanged: onChanged,
-      onFieldSubmitted: onFieldSubmitted,
-      onTap: onTap,
-      validator: validator,
-      decoration: InputDecoration(
-        hintText: hintText,
-        hintStyle: hintStyle,
-        prefixIcon: prefixIcon,
-        suffixIcon: suffixIcon,
-        filled: true,
-        fillColor: fillColor,
-        contentPadding: contentPadding ??
-            EdgeInsets.symmetric(vertical: 16.h, horizontal: 16.w),
-        enabledBorder: OutlineInputBorder(
-          borderSide: const BorderSide(color: Colors.transparent),
-          borderRadius: BorderRadius.circular(borderRadius.r),
-        ),
-        focusedBorder: OutlineInputBorder(
-          borderSide: BorderSide(
-            color: focusedBorderColor,
-            width: focusedBorderWidth.w,
+    return SizedBox(
+      height: 51,
+      width: double.infinity,
+      child: TextFormField(
+        controller: controller,
+        initialValue: initialValue,
+        focusNode: focusNode,
+        obscureText: obscureText,
+        readOnly: readOnly,
+        enabled: enabled,
+        keyboardType: keyboardType,
+        textInputAction: textInputAction,
+        maxLines: maxLines,
+        maxLength: maxLength,
+        onChanged: onChanged,
+        onFieldSubmitted: onFieldSubmitted,
+        onTap: onTap,
+        validator: validator,
+        decoration: InputDecoration(
+          hintText: hintText,
+          hintStyle: hintStyle,
+          prefixIcon: prefixIcon,
+          suffixIcon: suffixIcon,
+          filled: true,
+          fillColor: fillColor,
+          contentPadding: contentPadding ??
+              EdgeInsets.symmetric(vertical: 16.h, horizontal: 16.w),
+          enabledBorder: OutlineInputBorder(
+            borderSide: const BorderSide(color: Colors.transparent),
+            borderRadius: BorderRadius.circular(borderRadius.r),
           ),
-          borderRadius: BorderRadius.circular(borderRadius.r),
+          focusedBorder: OutlineInputBorder(
+            borderSide: BorderSide(
+              color: focusedBorderColor,
+              width: focusedBorderWidth.w,
+            ),
+            borderRadius: BorderRadius.circular(borderRadius.r),
+          ),
         ),
       ),
     );

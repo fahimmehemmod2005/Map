@@ -2,11 +2,13 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:get/get.dart';
+import 'package:map/app/routes/app_pages.dart';
 import 'package:map/common/widget/custom_botton/custom_elevated_button.dart';
 import 'package:map/common/widget/custom_social_button/custom_socail_button.dart';
 import 'package:map/common/widget/or_divider/or_divider.dart';
 import 'package:map/common/widget/rich_text/custom_richtext.dart';
 import 'package:map/common/widget/custom_text_form_field/custom_textfield.dart';
+import 'package:map/utils/pictures/images/images.dart';
 import '../../../../common/custom_scaffold/scaffold.dart';
 import '../../../../common/widget/custom_container_bar/custom_container_bar.dart';
 import '../../../../utils/pictures/icons/icons.dart';
@@ -21,6 +23,7 @@ class LoginView extends GetView<LoginController> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: CustomScaffold(
+        imagePath: UImages.scaffoldImage,
         child: Column(
           children: [
             SizedBox(height: 127.h),
@@ -101,7 +104,7 @@ class LoginView extends GetView<LoginController> {
                     Align(
                       alignment: AlignmentGeometry.centerRight,
                       child: InkWell(
-                        onTap: (){},
+                        onTap: (){Get.toNamed(Routes.FORGOT);},
                         child: Text(UText.loginForgotButtonText,
                         style: UTextStyles.title14_500w(color: Color(0xff0F9BE9)),
                         ),
@@ -113,6 +116,7 @@ class LoginView extends GetView<LoginController> {
                     //_______________Login Elevated button____________________
 
                     CustomElevatedButton(
+                      rowidth: 10,
                       onPressed: (){},
                       text: UText.loginButtonText,
                       textStyle: UTextStyles.title17_500w(color: Colors.white),
@@ -123,7 +127,7 @@ class LoginView extends GetView<LoginController> {
 
                     //___________________Or Divider_____________________
 
-                    OrDivider(
+                    divider(
                       lineColor: Colors.grey.shade400,
                       thickness: 1,
                       spacing: 14.0,

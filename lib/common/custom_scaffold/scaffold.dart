@@ -1,11 +1,15 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:map/utils/pictures/images/images.dart';
 
 class CustomScaffold extends StatelessWidget {
   final Widget child;
+  final String imagePath;
 
-  const CustomScaffold({super.key, required this.child});
+  const CustomScaffold({
+    super.key,
+    required this.imagePath,
+    required this.child
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -14,9 +18,7 @@ class CustomScaffold extends StatelessWidget {
       width: double.infinity.w,
       decoration: BoxDecoration(
         image: DecorationImage(
-            image: AssetImage(
-                UImages.scaffoldImage
-            ),
+            image: AssetImage(imagePath),
           fit: BoxFit.cover
         ),
       ),

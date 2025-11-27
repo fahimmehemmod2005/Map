@@ -6,10 +6,15 @@ class UTextStyles{
   UTextStyles._();
 
   static TextStyle title25_600w({Color? color}) => GoogleFonts.poppins(fontSize: 26.sp, fontWeight: FontWeight.w600, color: color);
+  static TextStyle title14_600w({Color? color}) => GoogleFonts.inter(fontSize: 14.sp, fontWeight: FontWeight.w600, color: color);
+  static TextStyle title22_600w({Color? color}) => GoogleFonts.inter(fontSize: 22.sp, fontWeight: FontWeight.w600, color: color);
+  static TextStyle title24_600w({Color? color}) => GoogleFonts.inter(fontSize: 24.sp, fontWeight: FontWeight.w600, color: color);
   static TextStyle title17_400w({Color? color}) => GoogleFonts.poppins(fontSize: 17.sp, fontWeight: FontWeight.w400, color: color);
+  static TextStyle title14_400w({Color? color}) => GoogleFonts.inter(fontSize: 14.sp, fontWeight: FontWeight.w400, color: color);
   static TextStyle title12_400w({Color? color}) => GoogleFonts.poppins(fontSize: 12.sp, fontWeight: FontWeight.w400, color: color);
   static TextStyle title14_500w({Color? color}) => GoogleFonts.poppins(fontSize: 14.sp, fontWeight: FontWeight.w500, color: color);
   static TextStyle title17_500w({Color? color}) => GoogleFonts.poppins(fontSize: 17.sp, fontWeight: FontWeight.w500, color: color);
+  static TextStyle title20_500w({Color? color}) => GoogleFonts.inter(fontSize: 20.sp, fontWeight: FontWeight.w500, color: color);
 
 }
 

@@ -3,6 +3,7 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
 import 'package:map/common/custom_scaffold/scaffold.dart';
 import 'package:map/utils/pictures/icons/icons.dart';
+import 'package:map/utils/pictures/images/images.dart';
 import '../controllers/splash_controller.dart';
 
 class SplashView extends GetView<SplashController> {
@@ -11,6 +12,7 @@ class SplashView extends GetView<SplashController> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: CustomScaffold(
+        imagePath: UImages.scaffoldImage,
         child: Column(
           children: [
             SizedBox(height: 353.h),

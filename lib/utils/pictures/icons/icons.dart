@@ -1,10 +1,11 @@
 class UIcons {
   UIcons._();
 
-  // Splash icons
+  // Splash screen icons
   static const String appLogo = 'assets/icons/app_logo.png';
+  static const String backButton= 'assets/icons/Back-button.png';
 
-  //Login Icons
+  //Login screen Icons
   static const String loginAppLogo = 'assets/icons/app_logo.png';
   static const String loginEmailFieldEmailIcon = 'assets/icons/email.svg';
   static const String loginPasswordFieldLockIcon= 'assets/icons/lock.svg';

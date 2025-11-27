@@ -1,16 +1,14 @@
 import 'package:flutter/material.dart';
 
 
-class OrDivider extends StatelessWidget {
-  // final String text;
+class divider extends StatelessWidget {
   final Widget? child;
   final Color? lineColor;
   final double? thickness;
   final double? spacing;
 
-  const OrDivider({
+  const divider({
     Key? key,
-    // this.text = 'OR',
     this.child,
     this.lineColor,
     this.thickness,

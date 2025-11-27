@@ -4,17 +4,18 @@ import 'package:flutter_svg/svg.dart';
 
 class CustomElevatedButton extends StatelessWidget {
   final String text;
-  final String imagePath;
+  final String? imagePath;
   final VoidCallback onPressed;
   final double height;
   final double borderRadius;
   final TextStyle? textStyle;
   final Widget? icon;
   final List<Color>? gradientColors;
+  final double? rowidth;
 
   const CustomElevatedButton({
     Key? key,
-    required this.imagePath,
+    this.imagePath,
     required this.text,
     required this.onPressed,
     this.height = 47.0,
@@ -22,6 +23,7 @@ class CustomElevatedButton extends StatelessWidget {
     this.textStyle,
     this.icon,
     this.gradientColors,
+    this.rowidth,
   }) : super(key: key);
 
   @override
@@ -36,17 +38,20 @@ class CustomElevatedButton extends StatelessWidget {
         ),
         borderRadius: BorderRadius.circular(borderRadius.r),
       ),
-      child: InkWell(
-        onTap: onPressed,
-        borderRadius: BorderRadius.circular(borderRadius.r),
-        child: Row(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            Text(text, style: textStyle),
-            SizedBox(width: 10.w),
-            SvgPicture.asset(imagePath, height: 24.h, width: 24.h,
-            ),
-          ],
+      child: Material(
+        color: Colors.transparent,
+        child: InkWell(
+          onTap: onPressed,
+          borderRadius: BorderRadius.circular(borderRadius.r),
+          child: Row(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              Text(text, style: textStyle),
+              SizedBox(width: rowidth?.w),
+              SvgPicture.asset(imagePath??'', height: 24.h, width: 24.h,
+              ),
+            ],
+          ),
         ),
       ),
     );
