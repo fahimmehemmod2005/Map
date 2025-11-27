@@ -2,11 +2,13 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:get/get.dart';
-import 'package:map/app/modules/login/views/widget/custom_elevated_button.dart';
-import 'package:map/common/widget/custom_richtext.dart';
-import 'package:map/common/widget/custom_textfield.dart';
+import 'package:map/common/widget/custom_botton/custom_elevated_button.dart';
+import 'package:map/common/widget/custom_social_button/custom_socail_button.dart';
+import 'package:map/common/widget/or_divider/or_divider.dart';
+import 'package:map/common/widget/rich_text/custom_richtext.dart';
+import 'package:map/common/widget/custom_text_form_field/custom_textfield.dart';
 import '../../../../common/custom_scaffold/scaffold.dart';
-import '../../../../common/widget/custom_container_bar.dart';
+import '../../../../common/widget/custom_container_bar/custom_container_bar.dart';
 import '../../../../utils/pictures/icons/icons.dart';
 import '../../../../utils/styles/styles.dart';
 import '../../../../utils/text/text.dart';
@@ -48,7 +50,7 @@ class LoginView extends GetView<LoginController> {
                       style: UTextStyles.title25_600w(color: Color(0xff0F9BE9)),
                     ),
 
-                    SizedBox(height: 26.h),
+                    SizedBox(height: 20.h),
 
                     //__________________Login SubTitle__________________
 
@@ -57,7 +59,7 @@ class LoginView extends GetView<LoginController> {
                       style: UTextStyles.title17_400w(color: Color(0xff000000)),
                     ),
 
-                    SizedBox(height: 38.h),
+                    SizedBox(height: 30.h),
 
                     //___________________Email Input Field________________
 
@@ -72,7 +74,7 @@ class LoginView extends GetView<LoginController> {
                       ),
                     ),
 
-                    SizedBox(height: 21.h),
+                    SizedBox(height: 20.h),
 
                     //___________________Password Input Field________________
 
@@ -92,13 +94,13 @@ class LoginView extends GetView<LoginController> {
                       ),
                     ),
 
-                    SizedBox(height: 24.h),
+                    SizedBox(height: 20.h),
 
                     //___________________Forgot Button__________________
 
                     Align(
                       alignment: AlignmentGeometry.centerRight,
-                      child: GestureDetector(
+                      child: InkWell(
                         onTap: (){},
                         child: Text(UText.loginForgotButtonText,
                         style: UTextStyles.title14_500w(color: Color(0xff0F9BE9)),
@@ -106,7 +108,7 @@ class LoginView extends GetView<LoginController> {
                       ),
                     ),
 
-                    SizedBox(height: 43.h),
+                    SizedBox(height: 30.h),
 
                     //_______________Login Elevated button____________________
 
@@ -114,10 +116,39 @@ class LoginView extends GetView<LoginController> {
                       onPressed: (){},
                       text: UText.loginButtonText,
                       textStyle: UTextStyles.title17_500w(color: Colors.white),
-                      icon: SvgPicture.asset(UIcons.loginButtonRightArrowIcon),
+                      imagePath: UIcons.loginButtonRightArrowIcon,
                     ),
 
-                    SizedBox(height: 27.h),
+                    SizedBox(height: 20.h),
+
+                    //___________________Or Divider_____________________
+
+                    OrDivider(
+                      lineColor: Colors.grey.shade400,
+                      thickness: 1,
+                      spacing: 14.0,
+                      child: Text(
+                          UText.loginOrDividerText,
+                        style: UTextStyles.title12_400w(color: Color(0xff20222C)),
+                      ),
+                    ),
+
+                    SizedBox(height: 20.h),
+
+                    //_______________Social Buttons____________________
+
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        CustomSocialButton(imagePath: UIcons.loginFacebookIcon, onPressed: (){}),
+                        SizedBox(width: 12.w),
+                        CustomSocialButton(imagePath: UIcons.loginGoogleIcon, onPressed: (){}),
+                        SizedBox(width: 12.w),
+                        CustomSocialButton(imagePath: UIcons.loginAppleIcon, onPressed: (){}),
+                      ],
+                    ),
+
+                    SizedBox(height: 20.h),
 
                     //_______________Custom Rich Text____________________
 

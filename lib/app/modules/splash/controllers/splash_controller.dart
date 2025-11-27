@@ -11,7 +11,7 @@ class SplashController extends GetxController {
   }
 
   void jumpToNextScreen() async {
-    //  loading progress
+    // loading progress
     for (int i = 0; i <= 100; i++) {
       await Future.delayed(Duration(milliseconds: 30));
       progress.value = i / 100;
