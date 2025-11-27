@@ -31,9 +31,7 @@ class LoginView extends GetView<LoginController> {
             //______________App Logo____________________
 
             Image.asset(
-                UIcons.loginAppLogo,
-                height: 71.h, width: 253.w
-            ),
+                UIcons.loginAppLogo, height: 71.h, width: 253.w),
 
             SizedBox(height: 43.h),
 
@@ -73,7 +71,9 @@ class LoginView extends GetView<LoginController> {
                       ),
                       prefixIcon: Padding(
                         padding: const EdgeInsets.all(6.5),
-                        child: SvgPicture.asset(UIcons.loginEmailFieldEmailIcon),
+                        child: SvgPicture.asset(
+                          UIcons.loginEmailFieldEmailIcon,
+                        ),
                       ),
                     ),
 
@@ -89,11 +89,15 @@ class LoginView extends GetView<LoginController> {
                       ),
                       prefixIcon: Padding(
                         padding: const EdgeInsets.all(6.5),
-                        child: SvgPicture.asset(UIcons.loginPasswordFieldLockIcon),
+                        child: SvgPicture.asset(
+                          UIcons.loginPasswordFieldLockIcon,
+                        ),
                       ),
                       suffixIcon: Padding(
                         padding: const EdgeInsets.all(6.5),
-                        child: SvgPicture.asset(UIcons.loginPasswordFieldVisibilityOffIcon),
+                        child: SvgPicture.asset(
+                          UIcons.loginPasswordFieldVisibilityOffIcon,
+                        ),
                       ),
                     ),
 
@@ -104,9 +108,14 @@ class LoginView extends GetView<LoginController> {
                     Align(
                       alignment: AlignmentGeometry.centerRight,
                       child: InkWell(
-                        onTap: (){Get.toNamed(Routes.FORGOT);},
-                        child: Text(UText.loginForgotButtonText,
-                        style: UTextStyles.title14_500w(color: Color(0xff0F9BE9)),
+                        onTap: () {
+                          Get.toNamed(Routes.FORGOT);
+                        },
+                        child: Text(
+                          UText.loginForgotButtonText,
+                          style: UTextStyles.title14_500w(
+                            color: Color(0xff0F9BE9),
+                          ),
                         ),
                       ),
                     ),
@@ -117,7 +126,9 @@ class LoginView extends GetView<LoginController> {
 
                     CustomElevatedButton(
                       rowidth: 10,
-                      onPressed: (){},
+                      onPressed: () {
+                        Get.toNamed(Routes.MAIN_SCREEN);
+                      },
                       text: UText.loginButtonText,
                       textStyle: UTextStyles.title17_500w(color: Colors.white),
                       imagePath: UIcons.loginButtonRightArrowIcon,
@@ -129,11 +140,13 @@ class LoginView extends GetView<LoginController> {
 
                     divider(
                       lineColor: Colors.grey.shade400,
-                      thickness: 1,
-                      spacing: 14.0,
-                      child: Text(
-                          UText.loginOrDividerText,
-                        style: UTextStyles.title12_400w(color: Color(0xff20222C)),
+                       thickness: 1,
+                       spacing: 14.0,
+                       child: Text(
+                        UText.loginOrDividerText,
+                        style: UTextStyles.title12_400w(
+                          color: Color(0xff20222C),
+                        ),
                       ),
                     ),
 
@@ -144,11 +157,20 @@ class LoginView extends GetView<LoginController> {
                     Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
-                        CustomSocialButton(imagePath: UIcons.loginFacebookIcon, onPressed: (){}),
+                        CustomSocialButton(
+                          imagePath: UIcons.loginFacebookIcon,
+                          onPressed: () {},
+                        ),
                         SizedBox(width: 12.w),
-                        CustomSocialButton(imagePath: UIcons.loginGoogleIcon, onPressed: (){}),
+                        CustomSocialButton(
+                          imagePath: UIcons.loginGoogleIcon,
+                          onPressed: () {},
+                        ),
                         SizedBox(width: 12.w),
-                        CustomSocialButton(imagePath: UIcons.loginAppleIcon, onPressed: (){}),
+                        CustomSocialButton(
+                          imagePath: UIcons.loginAppleIcon,
+                          onPressed: () {},
+                        ),
                       ],
                     ),
 
@@ -157,10 +179,14 @@ class LoginView extends GetView<LoginController> {
                     //_______________Custom Rich Text____________________
 
                     CustomRichText(
-                        textOne: UText.loginRichFirstText,
-                        textOneStyle: UTextStyles.title12_400w(color: Color(0xff20222C)),
-                        textTwo: UText.loginRichSecondText,
-                      textTwoStyle: UTextStyles.title14_500w(color: Color(0xffFC5C00)),
+                      textOne: UText.loginRichFirstText,
+                      textOneStyle: UTextStyles.title12_400w(
+                        color: Color(0xff20222C),
+                      ),
+                      textTwo: UText.loginRichSecondText,
+                      textTwoStyle: UTextStyles.title14_500w(
+                        color: Color(0xffFC5C00),
+                      ),
                     ),
                   ],
                 ),

@@ -9,6 +9,7 @@ abstract class Routes {
   static const FORGOT = _Paths.FORGOT;
   static const VERIFY_CODE = _Paths.VERIFY_CODE;
   static const RESET_PASSWORD = _Paths.RESET_PASSWORD;
+  static const MAIN_SCREEN = _Paths.MAIN_SCREEN;
 }
 
 abstract class _Paths {
@@ -19,4 +20,5 @@ abstract class _Paths {
   static const FORGOT = '/forgot';
   static const VERIFY_CODE = '/verify-code';
   static const RESET_PASSWORD = '/reset-password';
+  static const MAIN_SCREEN = '/main-screen';
 }
