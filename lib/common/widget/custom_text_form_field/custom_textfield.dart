@@ -66,9 +66,16 @@ class CustomTextFormField extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return SizedBox(
+    return Container(
       height: 51,
-      width: double.infinity,
+      decoration: BoxDecoration(
+        boxShadow: [
+          BoxShadow(
+            color: Colors.black26,
+            blurRadius: 60,
+          ),
+        ]
+      ),
       child: TextFormField(
         controller: controller,
         initialValue: initialValue,
