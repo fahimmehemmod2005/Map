@@ -10,6 +10,9 @@ abstract class Routes {
   static const VERIFY_CODE = _Paths.VERIFY_CODE;
   static const RESET_PASSWORD = _Paths.RESET_PASSWORD;
   static const MAIN_SCREEN = _Paths.MAIN_SCREEN;
+  static const SEARCH = _Paths.SEARCH;
+  static const FRIENDS = _Paths.FRIENDS;
+  static const PROFILE = _Paths.PROFILE;
 }
 
 abstract class _Paths {
@@ -21,4 +24,7 @@ abstract class _Paths {
   static const VERIFY_CODE = '/verify-code';
   static const RESET_PASSWORD = '/reset-password';
   static const MAIN_SCREEN = '/main-screen';
+  static const SEARCH = '/search';
+  static const FRIENDS = '/friends';
+  static const PROFILE = '/profile';
 }
