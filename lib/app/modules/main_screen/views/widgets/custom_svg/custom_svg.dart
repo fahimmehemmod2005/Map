@@ -1,0 +1,26 @@
+import 'package:flutter/material.dart';
+import 'package:flutter_svg/svg.dart';
+
+class CustomSvg extends StatelessWidget {
+  final String imagePath;
+  final double? height;
+  final double? width;
+  final Color? color;
+  const CustomSvg({
+    super.key,
+    required this.imagePath,
+    this.height = 24,
+    this.width = 24,
+    this.color,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    return SvgPicture.asset(
+        imagePath,
+        height: height,
+        width: width,
+      color: color,
+    );
+  }
+}
