@@ -67,7 +67,7 @@ class ForgotView extends GetView<ForgotController> {
              //__________________Email field_________________
 
              Padding(
-               padding:  EdgeInsets.symmetric(horizontal: 48.0),
+               padding:  EdgeInsets.symmetric(horizontal: 30.0),
                child: CustomTextFormField(
                  hintText: UText.forgotEmailFieldHintText,
                  hintStyle: UTextStyles.title12_400w(color: Color(0xffACACAC)),
@@ -79,7 +79,7 @@ class ForgotView extends GetView<ForgotController> {
              //________________Send Button___________________
 
              Padding(
-               padding: EdgeInsets.symmetric(horizontal: 65.0),
+               padding: EdgeInsets.symmetric(horizontal: 45.0),
                child: CustomElevatedButton(
                    text: UText.forgotSendButtonText,
                    textStyle: UTextStyles.title17_500w(color: Color(0xffFFFFFF)),

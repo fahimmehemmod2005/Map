@@ -99,7 +99,7 @@ class VerifyCodeView extends GetView<VerifyCodeController> {
               //________________Send Button___________________
 
               Padding(
-                padding: EdgeInsets.symmetric(horizontal: 65.0),
+                padding: EdgeInsets.symmetric(horizontal: 45.0),
                 child: CustomElevatedButton(
                     text: UText.otpVerifyButtonText,
                     textStyle: UTextStyles.title17_500w(color: Color(0xffFFFFFF)),

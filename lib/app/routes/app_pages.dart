@@ -1,5 +1,4 @@
 import 'package:get/get.dart';
-
 import '../modules/Friends/bindings/friends_binding.dart';
 import '../modules/Friends/views/friends_view.dart';
 import '../modules/forgot/bindings/forgot_binding.dart';
@@ -26,7 +25,7 @@ part 'app_routes.dart';
 class AppPages {
   AppPages._();
 
-  static const INITIAL = Routes.MAIN_SCREEN;
+  static const INITIAL = Routes.SPLASH;
 
   static final routes = [
     GetPage(

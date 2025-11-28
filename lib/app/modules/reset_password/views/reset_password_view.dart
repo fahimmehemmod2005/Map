@@ -57,7 +57,7 @@ class ResetPasswordView extends GetView<ResetPasswordController> {
               //__________________ New Pass field & confirm pass field _________________
 
               Padding(
-                padding:  EdgeInsets.symmetric(horizontal: 40.0),
+                padding:  EdgeInsets.symmetric(horizontal: 30.0),
                 child: Column(
                   children: [
 
@@ -68,7 +68,7 @@ class ResetPasswordView extends GetView<ResetPasswordController> {
                       hintStyle: UTextStyles.title12_400w(color: Color(0xffACACAC)),
                     ),
 
-                    SizedBox(height: 10.h),
+                    SizedBox(height: 15.h),
 
                     //______________________retype pass field_____________________
 
@@ -85,7 +85,7 @@ class ResetPasswordView extends GetView<ResetPasswordController> {
               //________________Send Button___________________
 
               Padding(
-                padding: EdgeInsets.symmetric(horizontal: 65.0),
+                padding: EdgeInsets.symmetric(horizontal: 40.0),
                 child: CustomElevatedButton(
                     text: UText.resetSaveButtonText,
                     textStyle: UTextStyles.title17_500w(color: Color(0xffFFFFFF)),
