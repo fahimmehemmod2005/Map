@@ -1,6 +1,9 @@
 import 'package:get/get.dart';
+
 import '../modules/Friends/bindings/friends_binding.dart';
 import '../modules/Friends/views/friends_view.dart';
+import '../modules/create_account/bindings/create_account_binding.dart';
+import '../modules/create_account/views/create_account_view.dart';
 import '../modules/forgot/bindings/forgot_binding.dart';
 import '../modules/forgot/views/forgot_view.dart';
 import '../modules/home/bindings/home_binding.dart';
@@ -77,6 +80,11 @@ class AppPages {
       name: _Paths.PROFILE,
       page: () => const ProfileView(),
       binding: ProfileBinding(),
+    ),
+    GetPage(
+      name: _Paths.CREATE_ACCOUNT,
+      page: () => const CreateAccountView(),
+      binding: CreateAccountBinding(),
     ),
   ];
 }

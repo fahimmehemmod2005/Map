@@ -31,7 +31,7 @@ class LoginView extends GetView<LoginController> {
             //______________App Logo____________________
 
             Image.asset(
-                UIcons.loginAppLogo, height: 71.h, width: 253.w),
+                UIcons.appLogo, height: 71.h, width: 253.w),
 
             SizedBox(height: 43.h),
 
@@ -131,7 +131,7 @@ class LoginView extends GetView<LoginController> {
                       },
                       text: UText.loginButtonText,
                       textStyle: UTextStyles.title17_500w(color: Colors.white),
-                      imagePath: UIcons.loginButtonRightArrowIcon,
+                      imagePath: UIcons.forwardArrow,
                     ),
 
                     SizedBox(height: 20.h),
@@ -187,6 +187,7 @@ class LoginView extends GetView<LoginController> {
                       textTwoStyle: UTextStyles.title14_500w(
                         color: Color(0xffFC5C00),
                       ),
+                      onTap: () => Get.toNamed(Routes.CREATE_ACCOUNT),
                     ),
                   ],
                 ),

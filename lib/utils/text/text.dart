@@ -12,6 +12,16 @@ class UText {
   static const String loginRichFirstText = "Don’t Have An Account? ";
   static const String loginRichSecondText = "Register Now";
 
+  // Create account screen text
+  static const String createAccountTitle = "Glad to have you join us!";
+  static const String createAccountSubTitle = "Let‘s get started";
+  static const String createAccountEmailFieldHintText = "Email . . .";
+  static const String createAccountPassFieldHintText = "Password . . .";
+  static const String createAccountRePassFieldHintText = "Retype Password . . .";
+  static const String createAccountButtonText = "Continue";
+  static const String createAccountRichFirstText = "Already Have An Account? ";
+  static const String createAccountRichSecondText = "Sign in";
+
   // Forgot screen Text
   static const String forgotTitle = "Forgot Your Password?";
   static const String forgotSubTitle = "Please enter the email address\nassociated with your account and we’ll\nsend you a verification link.";
