@@ -8,17 +8,6 @@ class MainScreenView extends GetView<MainScreenController> {
   const MainScreenView({super.key});
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: const Text('MainScreenView'),
-        centerTitle: true,
-      ),
-      body: const Center(
-        child: Text(
-          'MainScreenView is working',
-          style: TextStyle(fontSize: 20),
-        ),
-      ),
-    );
+    return Container();
   }
 }
