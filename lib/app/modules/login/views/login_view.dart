@@ -172,7 +172,7 @@ class LoginView extends GetView<LoginController> {
                       ],
                     ),
 
-                    SizedBox(height: 20.h),
+                    SizedBox(height: 40.h),
 
                     //_______________Custom Rich Text____________________
 
