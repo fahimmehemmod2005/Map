@@ -39,7 +39,7 @@ class MainScreenView extends GetView<MainScreenController> {
                 height: 70.h,
                 decoration: BoxDecoration(
                   color: Colors.white,
-                  borderRadius: BorderRadius.circular(30),
+                  borderRadius: BorderRadius.circular(30.r),
                 ),
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceAround,
@@ -69,7 +69,7 @@ Widget _bottomItem(
   return GestureDetector(
     onTap: () => controller.changeIndex(index),
     child: SizedBox(
-      width: 70,
+      width: 70.w,
       child: Stack(
         alignment: Alignment.center,
         children: [
@@ -84,11 +84,14 @@ Widget _bottomItem(
                 child: controller.selectedIndex.value == index
                     ? ShaderMask(
                   shaderCallback: (bounds) => LinearGradient(
-                    colors: [Color(0xff6DC3F2), Color(0xff0289F2)],
+                    colors: [
+                      Color(0xff6DC3F2),
+                      Color(0xff0289F2)
+                    ],
                     begin: Alignment.topLeft,
                     end: Alignment.bottomRight,
                   ).createShader(
-                    Rect.fromLTWH(0, 0, bounds.width, bounds.height),
+                    Rect.fromLTWH(0, 0, bounds.width.w, bounds.height.h),
                   ),
                   child: CustomSvg(imagePath: icon, color: Colors.white),
                 )
@@ -100,7 +103,7 @@ Widget _bottomItem(
             bottom: 0,
             child: AnimatedContainer(
               duration: Duration(milliseconds: 250),
-              height: 7,
+              height: 7.h,
               width: controller.selectedIndex.value == index ? 39 : 0,
               curve: Curves.easeInOut,
               child: CustomSvg(imagePath: UBottomIcons.navSelectedBarIcon),
