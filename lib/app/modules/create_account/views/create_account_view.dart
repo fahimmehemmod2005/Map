@@ -52,8 +52,6 @@ class CreateAccountView extends GetView<CreateAccountController> {
                         UText.createAccountTitle,
                         style: UTextStyles.title25_600w(color: Color(0xff0F9BE9)),),
 
-                      SizedBox(height: 10.h),
-
                       //_________________Sbu Title____________________
 
                       Text(
@@ -127,7 +125,7 @@ class CreateAccountView extends GetView<CreateAccountController> {
                         imagePath: UIcons.forwardArrow,
                       ),
 
-                      SizedBox(height: 80.h),
+                      SizedBox(height: 70.h),
 
                       //_____________ Rich Text _________________
 

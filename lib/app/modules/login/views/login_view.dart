@@ -51,8 +51,6 @@ class LoginView extends GetView<LoginController> {
                       style: UTextStyles.title25_600w(color: Color(0xff0F9BE9)),
                     ),
 
-                    SizedBox(height: 20.h),
-
                     //__________________Login SubTitle__________________
 
                     Text(
