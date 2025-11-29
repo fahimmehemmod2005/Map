@@ -78,8 +78,8 @@ Widget _bottomItems(
             children: [
               AnimatedContainer(
                 duration: Duration(milliseconds: 250),
-                height: navController.selectedIndex.value == index ? 34 : 24,
-                width: navController.selectedIndex.value == index ? 34 : 24,
+                height: navController.selectedIndex.value == index ? 34.h : 24.h,
+                width: navController.selectedIndex.value == index ? 34.w : 24.w,
                 curve: Curves.easeInOut,
                 child: navController.selectedIndex.value == index
                     ? ShaderMask(
