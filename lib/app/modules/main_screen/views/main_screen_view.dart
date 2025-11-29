@@ -44,10 +44,10 @@ class MainScreenView extends GetView<MainScreenController> {
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceAround,
                   children: [
-                    _bottomItem(navController, index: 0, icon: UBottomIcons.navHomeIcon),
-                    _bottomItem(navController, index: 1, icon: UBottomIcons.navSearchIcon),
-                    _bottomItem(navController, index: 2, icon: UBottomIcons.navFriendIcon),
-                    _bottomItem(navController, index: 3, icon: UBottomIcons.navProfileIcon),
+                    _bottomItems(navController, index: 0, icon: UBottomIcons.navHomeIcon),
+                    _bottomItems(navController, index: 1, icon: UBottomIcons.navSearchIcon),
+                    _bottomItems(navController, index: 2, icon: UBottomIcons.navFriendIcon),
+                    _bottomItems(navController, index: 3, icon: UBottomIcons.navProfileIcon),
                   ],
                 ),
               ),
@@ -61,7 +61,7 @@ class MainScreenView extends GetView<MainScreenController> {
 
 // __________________ Bottom Nav Item Widget _____________________
 
-Widget _bottomItem(
+Widget _bottomItems(
     MainScreenController controller, {
       required int index,
       required String icon,
