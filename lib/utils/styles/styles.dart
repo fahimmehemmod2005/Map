@@ -13,8 +13,10 @@ class UTextStyles{
   static TextStyle title14_400w({Color? color}) => GoogleFonts.inter(fontSize: 14.sp, fontWeight: FontWeight.w400, color: color);
   static TextStyle title12_400w({Color? color}) => GoogleFonts.poppins(fontSize: 12.sp, fontWeight: FontWeight.w400, color: color);
   static TextStyle title14_500w({Color? color}) => GoogleFonts.poppins(fontSize: 14.sp, fontWeight: FontWeight.w500, color: color);
+  static TextStyle title11_500w({Color? color}) => GoogleFonts.poppins(fontSize: 14.sp, fontWeight: FontWeight.w500, color: color);
   static TextStyle title17_500w({Color? color}) => GoogleFonts.poppins(fontSize: 17.sp, fontWeight: FontWeight.w500, color: color);
   static TextStyle title20_500w({Color? color}) => GoogleFonts.inter(fontSize: 20.sp, fontWeight: FontWeight.w500, color: color);
+  static TextStyle title10_500w({Color? color}) => GoogleFonts.roboto(fontSize: 10.sp, fontWeight: FontWeight.w300, color: color);
 
 }
 

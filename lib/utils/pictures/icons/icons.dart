@@ -6,6 +6,7 @@ class UIcons {
   static const String facebookIcon= 'assets/icons/facebook.svg';
   static const String googleIcon= 'assets/icons/google.svg';
   static const String appleIcon= 'assets/icons/apple.svg';
+  static const String emailContainer='assets/icons/connected to.svg';
 
   // Splash screen icons
   static const String backButton= 'assets/icons/Back-button.png';
@@ -21,4 +22,7 @@ class UIcons {
   static const String createAccountPrefixPassIcon ="assets/icons/lock.svg";
   static const String createAccountPrefixRePassIcon ="assets/icons/lock.svg";
   static const String createAccountSuffixVisibilityOffIcon ="assets/icons/visibility_of.svg";
+
+  //User Create
+  static const String smApple ="assets/icons/sm_apple.svg";
 }
