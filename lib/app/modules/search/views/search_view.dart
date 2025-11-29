@@ -9,10 +9,6 @@ class SearchView extends GetView<SearchController> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: const Text('SearchView'),
-        centerTitle: true,
-      ),
       body: const Center(
         child: Text(
           'SearchView is working',

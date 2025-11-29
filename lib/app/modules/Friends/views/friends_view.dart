@@ -9,10 +9,6 @@ class FriendsView extends GetView<FriendsController> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: const Text('FriendsView'),
-        centerTitle: true,
-      ),
       body: const Center(
         child: Text(
           'FriendsView is working',
