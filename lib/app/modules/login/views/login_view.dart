@@ -156,17 +156,17 @@ class LoginView extends GetView<LoginController> {
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
                         CustomSocialButton(
-                          imagePath: UIcons.loginFacebookIcon,
+                          imagePath: UIcons.facebookIcon,
                           onPressed: () {},
                         ),
                         SizedBox(width: 12.w),
                         CustomSocialButton(
-                          imagePath: UIcons.loginGoogleIcon,
+                          imagePath: UIcons.googleIcon,
                           onPressed: () {},
                         ),
                         SizedBox(width: 12.w),
                         CustomSocialButton(
-                          imagePath: UIcons.loginAppleIcon,
+                          imagePath: UIcons.appleIcon,
                           onPressed: () {},
                         ),
                       ],

@@ -41,4 +41,21 @@ class UText {
   static const String resetNewPassFieldHintText = "New password . . .";
   static const String resetRetypePassFieldHintText = "Retype your new password . . .";
   static const String resetSaveButtonText = "Save";
+
+  //Create user profile
+  static const String createUserTitle ="Create your profile";
+  static const String createUserContainerTextOne ="Connected to:";
+  static const String createUserContainerEmail ="dereksmith@gmail.com";
+  static const String createUserNameField ="Name";
+  static const String createUserEmailField ="Email";
+  static const String createUserPhoneNumberField ="Phone number";
+  static const String createUserDateField ="Date of birth";
+  static const String createUserCountryField ="Country from";
+  static const String createUserLivesField ="Lives in";
+  static const String createUserPublicField ="Public profile";
+  static const String createUserConnectField ="Connect your contacts";
+  static const String createUserButtonText ="save";
+  static const String createUserNameText ="Derek";
+  static const String createUserEmailText ="dereksmith@gmail.com";
+  static const String createUserLivesText ="Anguilla";
 }

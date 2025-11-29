@@ -3,6 +3,9 @@ class UIcons {
 
   //const
   static const String appLogo = 'assets/icons/app_logo.png';
+  static const String facebookIcon= 'assets/icons/facebook.svg';
+  static const String googleIcon= 'assets/icons/google.svg';
+  static const String appleIcon= 'assets/icons/apple.svg';
 
   // Splash screen icons
   static const String backButton= 'assets/icons/Back-button.png';
@@ -12,9 +15,6 @@ class UIcons {
   static const String loginEmailFieldEmailIcon = 'assets/icons/email.svg';
   static const String loginPasswordFieldLockIcon= 'assets/icons/lock.svg';
   static const String loginPasswordFieldVisibilityOffIcon= 'assets/icons/visibility_of.svg';
-  static const String loginFacebookIcon= 'assets/icons/facebook.svg';
-  static const String loginGoogleIcon= 'assets/icons/google.svg';
-  static const String loginAppleIcon= 'assets/icons/apple.svg';
 
   //create screen icons
   static const String createAccountEmailIcon ="assets/icons/email.svg";
