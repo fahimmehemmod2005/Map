@@ -7,6 +7,7 @@ import 'package:map/app/modules/main_screen/views/widgets/custom_svg/custom_svg.
 import 'package:map/common/custom_padding/padding.dart';
 import 'package:map/common/custom_scaffold/scaffold.dart';
 import 'package:map/common/widget/custom_botton/custom_elevated_button.dart';
+import 'package:map/common/widget/custom_input_field_card/custom_input_field_card.dart';
 import 'package:map/utils/pictures/icons/icons.dart';
 import 'package:map/utils/pictures/images/images.dart';
 import 'package:map/utils/styles/styles.dart';
@@ -101,9 +102,9 @@ class UserCreateView extends GetView<UserCreateController> {
                 child: Padding(padding: UPadding.screenPadding,
                   child: Column(
                     children: [
-                      TextFormField(
+                      CustomInputFieldCard(hintText: UText.createUserNameField,suffixText: UText.createUserNameText),
+                      CustomInputFieldCard(hintText: UText.createUserEmailField,suffixText: UText.createUserEmailText),
 
-                      ),
                     ],
                   ),
                 ),
@@ -111,10 +112,10 @@ class UserCreateView extends GetView<UserCreateController> {
             ),
 
             SizedBox(height: 50.h),
-            
+
             //________________ Button __________________
 
-            
+
             Padding(
               padding: EdgeInsets.symmetric(horizontal: 35.0),
               child: CustomElevatedButton(text: UText.createUserButtonText,textStyle: UTextStyles.title17_500w(color: Color(0xffFFFFFF)) ,onPressed: (){}),
