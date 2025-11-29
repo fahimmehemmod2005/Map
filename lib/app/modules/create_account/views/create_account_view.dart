@@ -119,7 +119,9 @@ class CreateAccountView extends GetView<CreateAccountController> {
 
                       CustomElevatedButton(
                         rowidth: 10,
-                        onPressed: () {},
+                        onPressed: () {
+                          Get.toNamed(Routes.USER_CREATE);
+                        },
                         text: UText.createAccountButtonText,
                         textStyle: UTextStyles.title17_500w(color: Colors.white),
                         imagePath: UIcons.forwardArrow,

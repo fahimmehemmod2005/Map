@@ -20,6 +20,8 @@ import '../modules/search/bindings/search_binding.dart';
 import '../modules/search/views/search_view.dart';
 import '../modules/splash/bindings/splash_binding.dart';
 import '../modules/splash/views/splash_view.dart';
+import '../modules/user_create/bindings/user_create_binding.dart';
+import '../modules/user_create/views/user_create_view.dart';
 import '../modules/verify_code/bindings/verify_code_binding.dart';
 import '../modules/verify_code/views/verify_code_view.dart';
 
@@ -85,6 +87,11 @@ class AppPages {
       name: _Paths.CREATE_ACCOUNT,
       page: () => const CreateAccountView(),
       binding: CreateAccountBinding(),
+    ),
+    GetPage(
+      name: _Paths.USER_CREATE,
+      page: () => const UserCreateView(),
+      binding: UserCreateBinding(),
     ),
   ];
 }
