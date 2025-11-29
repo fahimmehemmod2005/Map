@@ -20,7 +20,7 @@ class MainScreenView extends GetView<MainScreenController> {
       FriendsView(),
       ProfileView(),
     ];
-    final controller = Get.find<MainScreenController>();
+    final navController = Get.find<MainScreenController>();
 
     return Scaffold(
       body: Obx(() {
@@ -28,7 +28,7 @@ class MainScreenView extends GetView<MainScreenController> {
           children: [
             // _____________ Current page ____________
 
-            pages[controller.selectedIndex.value],
+            pages[navController.selectedIndex.value],
 
             //_________________ Bottom navigation bar _______________
 
@@ -44,10 +44,10 @@ class MainScreenView extends GetView<MainScreenController> {
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceAround,
                   children: [
-                    _bottomItem(controller, index: 0, icon: UBottomIcons.navHomeIcon),
-                    _bottomItem(controller, index: 1, icon: UBottomIcons.navSearchIcon),
-                    _bottomItem(controller, index: 2, icon: UBottomIcons.navFriendIcon),
-                    _bottomItem(controller, index: 3, icon: UBottomIcons.navProfileIcon),
+                    _bottomItem(navController, index: 0, icon: UBottomIcons.navHomeIcon),
+                    _bottomItem(navController, index: 1, icon: UBottomIcons.navSearchIcon),
+                    _bottomItem(navController, index: 2, icon: UBottomIcons.navFriendIcon),
+                    _bottomItem(navController, index: 3, icon: UBottomIcons.navProfileIcon),
                   ],
                 ),
               ),
