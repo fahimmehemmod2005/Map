@@ -15,7 +15,7 @@ class OtpResendController extends GetxController {
     seconds(30);
 
     _timer?.cancel();
-    _timer = Timer.periodic(const Duration(seconds: 1), (t) {
+    _timer = Timer.periodic(Duration(seconds: 1), (t) {
       if (seconds() == 0) {
         t.cancel();
         startResend(true);
