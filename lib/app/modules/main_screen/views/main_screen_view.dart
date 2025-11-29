@@ -68,47 +68,44 @@ Widget _bottomItems(
     }) {
   return GestureDetector(
     onTap: () => navController.changeIndex(index),
-    child: SizedBox(
-      width: 70.w,
-      child: Stack(
-        alignment: Alignment.center,
-        children: [
-          Column(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              AnimatedContainer(
-                duration: Duration(milliseconds: 250),
-                height: navController.selectedIndex.value == index ? 34.h : 24.h,
-                width: navController.selectedIndex.value == index ? 34.w : 24.w,
-                child: navController.selectedIndex.value == index
-                    ? ShaderMask(
-                  shaderCallback: (bounds) => LinearGradient(
-                    colors: [
-                      Color(0xff6DC3F2),
-                      Color(0xff0289F2)
-                    ],
-                    begin: Alignment.topLeft,
-                    end: Alignment.bottomRight,
-                  ).createShader(
-                    Rect.fromLTWH(0, 0, bounds.width.w, bounds.height.h),
-                  ),
-                  child: CustomSvg(imagePath: icon, color: Colors.white),
-                )
-                    : CustomSvg(imagePath: icon, color: Colors.grey),
-              ),
-            ],
-          ),
-          Positioned(
-            bottom: 0,
-            child: AnimatedContainer(
+    child: Stack(
+      alignment: Alignment.center,
+      children: [
+        Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            AnimatedContainer(
               duration: Duration(milliseconds: 250),
-              height: 7.h,
-              width: navController.selectedIndex.value == index ? 39.w : 0.w,
-              child: CustomSvg(imagePath: UBottomIcons.navSelectedBarIcon),
+              height: navController.selectedIndex.value == index ? 34.h : 24.h,
+              width: navController.selectedIndex.value == index ? 34.w : 24.w,
+              child: navController.selectedIndex.value == index
+                  ? ShaderMask(
+                shaderCallback: (bounds) => LinearGradient(
+                  colors: [
+                    Color(0xff6DC3F2),
+                    Color(0xff0289F2)
+                  ],
+                  begin: Alignment.topLeft,
+                  end: Alignment.bottomRight,
+                ).createShader(
+                  Rect.fromLTWH(0, 0, bounds.width.w, bounds.height.h),
+                ),
+                child: CustomSvg(imagePath: icon, color: Colors.white),
+              )
+                  : CustomSvg(imagePath: icon, color: Colors.grey),
             ),
+          ],
+        ),
+        Positioned(
+          bottom: 0,
+          child: AnimatedContainer(
+            duration: Duration(milliseconds: 250),
+            height: 7.h,
+            width: navController.selectedIndex.value == index ? 39.w : 0.w,
+            child: CustomSvg(imagePath: UBottomIcons.navSelectedBarIcon),
           ),
-        ],
-      ),
+        ),
+      ],
     ),
   );
 }

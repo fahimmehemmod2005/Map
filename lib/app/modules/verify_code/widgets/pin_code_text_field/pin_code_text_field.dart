@@ -15,7 +15,6 @@ class CustomPinCodeTextField extends StatelessWidget {
       length: 4,
       keyboardType: TextInputType.number,
       enabled: true,
-      cursorColor: Colors.black,
       enableActiveFill: true,
       cursorHeight: 0.0,
       hintCharacter: '-',
