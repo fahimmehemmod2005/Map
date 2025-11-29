@@ -80,7 +80,6 @@ Widget _bottomItems(
                 duration: Duration(milliseconds: 250),
                 height: navController.selectedIndex.value == index ? 34.h : 24.h,
                 width: navController.selectedIndex.value == index ? 34.w : 24.w,
-                curve: Curves.easeInOut,
                 child: navController.selectedIndex.value == index
                     ? ShaderMask(
                   shaderCallback: (bounds) => LinearGradient(
@@ -104,8 +103,7 @@ Widget _bottomItems(
             child: AnimatedContainer(
               duration: Duration(milliseconds: 250),
               height: 7.h,
-              width: navController.selectedIndex.value == index ? 39 : 0,
-              curve: Curves.easeInOut,
+              width: navController.selectedIndex.value == index ? 39.w : 0.w,
               child: CustomSvg(imagePath: UBottomIcons.navSelectedBarIcon),
             ),
           ),
