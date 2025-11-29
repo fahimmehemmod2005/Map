@@ -62,12 +62,12 @@ class MainScreenView extends GetView<MainScreenController> {
 // __________________ Bottom Nav Item Widget _____________________
 
 Widget _bottomItems(
-    MainScreenController controller, {
+    MainScreenController navController, {
       required int index,
       required String icon,
     }) {
   return GestureDetector(
-    onTap: () => controller.changeIndex(index),
+    onTap: () => navController.changeIndex(index),
     child: SizedBox(
       width: 70.w,
       child: Stack(
@@ -78,10 +78,10 @@ Widget _bottomItems(
             children: [
               AnimatedContainer(
                 duration: Duration(milliseconds: 250),
-                height: controller.selectedIndex.value == index ? 34 : 24,
-                width: controller.selectedIndex.value == index ? 34 : 24,
+                height: navController.selectedIndex.value == index ? 34 : 24,
+                width: navController.selectedIndex.value == index ? 34 : 24,
                 curve: Curves.easeInOut,
-                child: controller.selectedIndex.value == index
+                child: navController.selectedIndex.value == index
                     ? ShaderMask(
                   shaderCallback: (bounds) => LinearGradient(
                     colors: [
@@ -104,7 +104,7 @@ Widget _bottomItems(
             child: AnimatedContainer(
               duration: Duration(milliseconds: 250),
               height: 7.h,
-              width: controller.selectedIndex.value == index ? 39 : 0,
+              width: navController.selectedIndex.value == index ? 39 : 0,
               curve: Curves.easeInOut,
               child: CustomSvg(imagePath: UBottomIcons.navSelectedBarIcon),
             ),
