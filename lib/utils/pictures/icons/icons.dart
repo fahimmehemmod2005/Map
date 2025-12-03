@@ -7,6 +7,7 @@ class UIcons {
   static const String googleIcon= 'assets/icons/google.svg';
   static const String appleIcon= 'assets/icons/apple.svg';
   static const String emailContainer='assets/icons/connected to.svg';
+  static const String downArrow='assets/icons/down_arrow.svg';
 
   // Splash screen icons
   static const String backButton= 'assets/icons/Back-button.png';

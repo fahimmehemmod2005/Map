@@ -15,26 +15,28 @@ class CustomInputFieldCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return TextFormField(
-      decoration: InputDecoration(
-        hintText: hintText,
-        hintStyle: UTextStyles.rTitle14_500w(color: Colors.grey),
-
-        suffixIcon: Padding(
-          padding: EdgeInsets.only(right: 8.0, top: 14.0),
-          child: Text(
-            suffixText,
-            style: UTextStyles.title13_500w(color: Color(0xff273430)),
+    return Column(
+      children: [
+        Container(
+          height: 38,width: double.infinity,
+          child: TextFormField(
+            decoration: InputDecoration(
+              hintText: hintText,
+              hintStyle: UTextStyles.rTitle14_500w(color: Colors.grey),
+              suffixIcon: Padding(
+                padding: EdgeInsets.only(right: 8.0, top: 14.0),
+                child: Text(
+                  suffixText,
+                  style: UTextStyles.title13_500w(color: Color(0xff273430)),
+                ),
+              ),
+              border: InputBorder.none
+            ),
           ),
         ),
-
-        enabledBorder: UnderlineInputBorder(
-          borderSide: BorderSide(color: Colors.grey),
-        ),
-        focusedBorder: UnderlineInputBorder(
-          borderSide: BorderSide(color: Colors.grey),
-        ),
-      ),
+        SizedBox(height: 10,),
+        Divider(color: Color(0xC4C4C480),)
+      ],
     );
   }
 }
