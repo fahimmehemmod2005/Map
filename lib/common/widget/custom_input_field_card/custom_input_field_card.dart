@@ -1,8 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:map/utils/styles/styles.dart';
-import '../../../utils/text/text.dart';
-import '../../custom_padding/padding.dart';
 
 class CustomInputFieldCard extends StatelessWidget {
   final String hintText;
@@ -17,7 +14,7 @@ class CustomInputFieldCard extends StatelessWidget {
   Widget build(BuildContext context) {
     return Column(
       children: [
-        Container(
+        SizedBox(
           height: 38,width: double.infinity,
           child: TextFormField(
             decoration: InputDecoration(

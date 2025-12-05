@@ -31,7 +31,7 @@ class AllCountry extends StatelessWidget {
         );
       },
       child: SizedBox(
-        height: 35.h,
+        height: 40.h,
         child: Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [

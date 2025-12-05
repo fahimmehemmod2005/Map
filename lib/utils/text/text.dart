@@ -58,4 +58,10 @@ class UText {
   static const String createUserNameText ="Derek";
   static const String createUserEmailText ="dereksmith@gmail.com";
   static const String createUserLivesText ="Anguilla";
+
+  //bottom Sheet text
+  static const String userNameBottomSheetText = "Choose your username";
+  static const String userNameBottomSheetInputText = "Type a username . . .";
+  static const String userNameBottomSheetInputErrorText = "this username is unavailable";
+  static const String userNameBottomSheetButtonText = "Save";
 }
