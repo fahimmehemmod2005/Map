@@ -212,15 +212,12 @@ class UserCreateView extends GetView<UserCreateController> {
                             ),
                           ),
                           Expanded(
-                            child: Padding(
-                              padding: EdgeInsets.only(left: 10.w),
-                              child: IntlPhoneField(
-                                keyboardType: TextInputType.number,
-                                initialCountryCode: 'BD',
-                                showCountryFlag: false,
-                                decoration: InputDecoration(
-                                  border: InputBorder.none,
-                                ),
+                            child: IntlPhoneField(
+                              keyboardType: TextInputType.number,
+                              initialCountryCode: 'BD',
+                              showCountryFlag: false,
+                              decoration: InputDecoration(
+                                border: InputBorder.none,
                               ),
                             ),
                           ),
